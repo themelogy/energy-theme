@@ -1,0 +1,130 @@
+.mainnav {
+  border: 0 none;
+  border-radius: 0;
+}
+
+.navbar-default {
+  background-image: linear-gradient(to bottom, #383838 0%, #2f2f2f 100%);
+  background-repeat: repeat-x;
+  text-transform: capitalize !important;
+
+  .navbar-nav > .active > a {
+    background-color: $theme-color;
+    color: #ffffff;
+
+    &:hover, &:focus {
+      background-color: $theme-color;
+      color: #ffffff;
+    }
+  }
+
+  .navbar-collapse, .navbar-form {
+    border-color: #ebebeb;
+  }
+
+  .navbar-nav > .open > a {
+    color: #ffffff;
+    background-color: $theme-color;
+
+    &:hover, &:focus {
+      color: #ffffff;
+      background-color: $theme-color;
+    }
+  }
+}
+
+.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.nav.navbar-nav li {
+  &:hover ul.dropdown-menu {
+    display: block;
+  }
+
+  a {
+    text-transform: uppercase;
+    color: #bebebe;
+    font-weight: 500;
+    line-height: 25px;
+
+    &:hover, &:focus, &:active {
+      color: #ffffff;
+      background: #222222;
+    }
+  }
+}
+
+//.dropdown-menu {
+//  border-radius: 0;
+//  position: relative;
+//  float: none;
+//  width: 100%;
+//}
+
+.mainnav {
+  .mega-fw {
+    position: static;
+  }
+
+  .mega-content {
+    padding: 20px 30px;
+  }
+}
+
+.mega-menu-item h2 {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.mega-item-text a.email {
+  color: $theme-color !important;
+
+  &:hover {
+    color: #bf2718 !important;
+    background: none !important;
+  }
+}
+
+.megamenu-wrapper ul li {
+  border-top: 0 !important;
+}
+
+.nav.navbar-nav li ul {
+  //padding: 20px;
+  text-transform: uppercase;
+  @include box-shadow(0 0 10px rgba(0,0,0,.5));
+  li {
+    border-top: 1px solid #f2f2f2;
+
+    a {
+      padding: 10px 0;
+      font-size: 13px;
+      color: #222222;
+      &:hover {
+        background: #ffffff;
+        color: $theme-color !important;
+      }
+    }
+  }
+}
+
+.dropdown-menu li {
+  &.active > a, > a:focus {
+    background: #ffffff;
+    color: $theme-color !important;
+  }
+}
+
+.navbar-header {
+  float: right;
+}

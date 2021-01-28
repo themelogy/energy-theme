@@ -1,0 +1,91 @@
+
+.testimonial {
+  color: #777777;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 20px;
+
+  i {
+    color: #eeeeee;
+  }
+}
+
+h1.pricing-table-heading {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+ul.plan.text-center {
+  border: 2px solid #eeeeee;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  &.featured {
+    position: relative;
+
+    &:before {
+      color: #cc0000;
+      content: "\f02e";
+      font-family: FontAwesome;
+      font-size: 30px;
+      position: absolute;
+      right: 30px;
+      top: -10px;
+    }
+  }
+
+  li {
+    border-bottom: 1px solid #eeeeee;
+    padding: 10px;
+    font-size: 16px;
+
+    &.plan-price {
+      p.plane-name {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+        padding: 30px 10px 10px;
+        text-transform: uppercase;
+      }
+
+      h2.plane-price {
+        font-size: 48px;
+        font-weight: 700;
+        margin: 0;
+        padding: 0 20px;
+      }
+
+      span.plane-duration {}
+    }
+
+    &.plan-action {
+      padding: 30px 10px;
+
+      a.btn {
+        background: #eeeeee;
+        border: 0 none;
+        border-radius: 0;
+        color: #34404e;
+        font-size: 18px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+
+        &:hover {
+          background: #dddddd;
+        }
+      }
+    }
+  }
+
+  &.featured li.plan-action a.btn {
+    background: $theme-color;
+    color: #ffffff;
+
+    &:hover {
+      background: #dddddd;
+      color: #222222;
+    }
+  }
+}

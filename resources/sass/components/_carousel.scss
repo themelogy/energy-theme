@@ -1,0 +1,200 @@
+
+.carousel-inner.vertical {
+  height: 100%;
+
+  > {
+    .item {
+      -webkit-transition: .6s ease-in-out top;
+      -o-transition: .6s ease-in-out top;
+      transition: .6s ease-in-out top;
+    }
+
+    .active {
+      top: 0;
+    }
+  }
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-inner.vertical > .item {
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+    -o-transition: -o-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+
+    &.next, &.active.right {
+      top: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+
+    &.prev, &.active.left {
+      top: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+
+    &.next.left, &.prev.right, &.active {
+      top: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.owl-carousel {
+  .owl-nav {
+    .owl-prev, .owl-next {
+      font-family: 'fontAwesome', sans-serif;
+    }
+  }
+
+  .owl-dot {
+    font-family: 'fontAwesome', sans-serif;
+  }
+
+  .owl-nav {
+    .owl-prev:before, .owl-next:after {
+      font-size: 14px;
+    }
+
+    .owl-prev:before {
+      content: "\f104";
+    }
+
+    .owl-next:after {
+      content: "\f105";
+    }
+  }
+}
+
+.product-slider, .latest-news, .client-testimonial, .logo-slider {}
+
+.product-slider .owl-nav, .latest-news .owl-nav, .client-testimonial .owl-nav, .logo-slider .owl-nav {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -15px;
+}
+
+.product-slider .owl-nav {
+  .owl-prev, .owl-next {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #333333;
+    color: #ffffff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all .3s;
+  }
+}
+
+.latest-news .owl-nav {
+  .owl-prev, .owl-next {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #333333;
+    color: #ffffff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all .3s;
+  }
+}
+
+.client-testimonial .owl-nav {
+  .owl-prev, .owl-next {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #333333;
+    color: #ffffff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all .3s;
+  }
+}
+
+.logo-slider .owl-nav {
+  .owl-prev, .owl-next {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #333333;
+    color: #ffffff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all .3s;
+  }
+}
+
+.product-slider .owl-nav {
+  .owl-prev:hover, .owl-next:hover {
+    background: $theme-color;
+    color: #ffffff;
+  }
+}
+
+.latest-news .owl-nav {
+  .owl-prev:hover, .owl-next:hover {
+    background: $theme-color;
+    color: #ffffff;
+  }
+}
+
+.client-testimonial .owl-nav {
+  .owl-prev:hover, .owl-next:hover {
+    background: $theme-color;
+    color: #ffffff;
+  }
+}
+
+.logo-slider .owl-nav {
+  .owl-prev:hover, .owl-next:hover {
+    background: $theme-color;
+    color: #ffffff;
+  }
+}
+
+.product-slider .owl-nav .owl-prev, .latest-news .owl-nav .owl-prev, .client-testimonial .owl-nav .owl-prev, .logo-slider .owl-nav .owl-prev {
+  left: -10px;
+}
+
+.product-slider .owl-nav .owl-next, .latest-news .owl-nav .owl-next, .client-testimonial .owl-nav .owl-next, .logo-slider .owl-nav .owl-next {
+  right: -10px;
+}
+
+.product-slider:hover .owl-prev, .latest-news:hover .owl-prev, .client-testimonial:hover .owl-prev, .logo-slider:hover .owl-prev {
+  left: 5px;
+  opacity: 1;
+}
+
+.product-slider:hover .owl-next, .latest-news:hover .owl-next, .client-testimonial:hover .owl-next, .logo-slider:hover .owl-next {
+  right: 5px;
+  opacity: 1;
+}

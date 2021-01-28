@@ -1,0 +1,56 @@
+//Colors
+$theme-colors: (
+        red1: rgb(220,56,50),
+        red2: rgb(153, 31, 28),
+        black1: #221E20,
+        grey1: darken(white, 2.5%),
+        grey2: darken(white, 5%),
+        grey3: darken(white, 10%),
+        grey4: darken(white, 40%),
+        grey5: darken(white, 60%),
+        grey6: darken(white, 70%),
+        grey7: darken(white, 75%),
+        white: darken(white, 3%)
+);
+
+
+$white                      : map_get($theme-colors, white);
+$black                      : #000000;
+$gray                       : map_get($theme-colors, grey3);
+$darkgray                   : map_get($theme-colors, grey4);
+$muted                      : map_get($theme-colors, grey5);
+$border-color               : map-get($theme-colors, grey2);
+
+$theme-color: map-get($theme-colors, red1);
+
+//Body
+$body-bg-color: #f0f2f3;
+
+//Header
+$header-bg-color: transparent;
+$hader-box-shadow: rgba(0, 0, 0, 0.05) 0 2px 2px, rgba(0, 0, 0, 0.05) 0 4px 4px;
+
+//Mobile Nav
+$mobile-nav-header-bg-color: #ffffff;
+
+//Panel
+$panel-title-bg-color: #f9f9f9;
+
+// Hero Showcase
+$hero-bg-color: #262626;
+$hero-txt-color: #fff;
+$hero-hover-color: #34404e;
+$hero-first-color  : #2db3c4;
+$hero-second-color : #ffbd4f;
+$hero-third-color  : #d17383;
+$hero-fourth-color : #f1878a;
+$hero-opacity: .6;
+$hero-opacity-hover: .8;
+
+@mixin default-font-family() {
+  font-family: 'Roboto Condensed',sans-serif;
+}
+
+@mixin condensed-font-family() {
+  font-family: 'Roboto Condensed',sans-serif;
+}

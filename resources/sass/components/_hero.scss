@@ -1,0 +1,101 @@
+.hero-showcase {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  -webkit-flex-flow: row;
+  -webkit-align-content: center;
+  width: 100%;
+  margin-top: 15px;
+  background-color: $hero-bg-color;
+
+  .top-service-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    -webkit-flex-flow: row wrap;
+    -webkit-align-content: center;
+
+    div {
+      width: 221px;
+      height: 218px;
+      position: relative;
+      margin: 5px;
+      &:last-child {
+        min-width: 452px;
+      }
+    }
+
+    a {
+      padding: 50px 20px;
+      background: #fbfbfb;
+      position: absolute;
+      //text-align: center;
+      width: 100%;
+      height: 100%;
+      box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.1);
+    }
+
+    div {
+      background-position: center;
+      background-size: cover;
+      &:nth-child(1) a {
+        background: rgba($hero-first-color, $hero-opacity);
+        &:hover {
+          background: rgba($hero-first-color, $hero-opacity-hover);
+        }
+      }
+
+      &:nth-child(2) a {
+        background: rgba($hero-second-color, $hero-opacity);
+        &:hover {
+          background: rgba($hero-second-color, $hero-opacity-hover);
+        }
+      }
+
+      &:nth-child(3) a {
+        background: rgba($hero-third-color, $hero-opacity);
+        &:hover {
+          background: rgba($hero-third-color, $hero-opacity-hover);
+        }
+      }
+
+      &:nth-child(4) a {
+        background: rgba($hero-fourth-color, $hero-opacity);
+        &:hover {
+          background: rgba($hero-fourth-color, $hero-opacity-hover);
+        }
+      }
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    div a {
+      vertical-align: center;
+      h2 {
+        text-transform: uppercase;
+      }
+      h2, p {
+        color: $hero-txt-color;
+      }
+
+      &:hover {
+        text-decoration: none;
+        h2, p {
+          color: $hero-hover-color;
+        }
+      }
+    }
+  }
+}

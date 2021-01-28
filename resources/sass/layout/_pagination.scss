@@ -1,0 +1,39 @@
+
+.pagination {
+  border-radius: 0;
+  > {
+    li {
+      &:first-child > {
+        a, span {
+          border-radius: 0;
+        }
+      }
+
+      &:last-child > {
+        a, span {
+          border-radius: 0;
+        }
+      }
+    }
+
+    .active > {
+      a, span, a:hover, span:hover, a:focus, span:focus {
+        background-color: $theme-color;
+        border-color: $theme-color;
+      }
+    }
+  }
+
+  &:after, &:before {
+    clear: both;
+  }
+}
+
+.page-number > p {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 0;
+  display: inline-block;
+  margin-top: 50px;
+  padding: 6px 12px;
+}

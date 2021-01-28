@@ -1,0 +1,44 @@
+.header {
+  background: $header-bg-color;
+  //margin-top: 20px;
+  z-index: 1;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  @media all and (max-width: 968px) {
+    .logo a {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+.header-top {
+  padding: 20px 0;
+}
+
+.language {
+  float: right;
+  .dropdown {
+    button {
+      background-color: transparent !important;
+      border-color: darken(white, 10%);
+    }
+  }
+  @media all and (max-width: 968px) {
+    text-align: center;
+    .social-icon {
+      ul {
+        text-align: center;
+        li {
+          float: none;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  @media all and (min-width: 968px) {
+    .social-icon {
+      float: right;
+    }
+  }
+}

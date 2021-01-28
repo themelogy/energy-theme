@@ -1,0 +1,166 @@
+html, button, input, select, textarea {
+  color: #222222;
+}
+
+html {
+  font-size: 14px;
+  line-height: 1.6em;
+}
+
+::-moz-selection, ::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio, canvas, img, video {
+  vertical-align: middle;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.alignleft {
+  float: left;
+  margin-right: 15px;
+}
+
+.alignright {
+  float: right;
+  margin-left: 15px;
+}
+
+.aligncenter {
+  float: none;
+  margin-left: 0;
+  display: block;
+}
+
+.floatleft {
+  float: left;
+}
+
+.floatright {
+  float: right;
+}
+
+a {
+  outline: none;
+
+  &:active, &:focus, &:active {
+    text-decoration: none !important;
+    outline: none;
+  }
+
+  color: $theme-color;
+  text-decoration: none;
+  transition: all 0.2s ease 0s;
+
+  &:hover, &:focus {
+    color: #bf2718;
+    text-decoration: none !important;
+  }
+}
+
+strong {
+  font-weight: 400;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+
+  &.img-responsive {
+    width: 100%;
+  }
+}
+
+body {
+  @include default-font-family;
+  background: $body-bg-color;
+  font-weight: 300;
+  color: #34404e;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include condensed-font-family;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+h2, .h2 {
+  font-size: 23px;
+}
+
+a {
+  &:hover, &:focus {
+    color: #bf2718;
+    text-decoration: underline;
+  }
+}
+
+.d-flex {
+  display: flex !important;
+  i {
+    width: 20px;
+    text-align: center;
+  }
+}
+
+.thumbnail {
+  .caption {
+    padding: 10px 20px !important;
+  }
+}

@@ -1,0 +1,95 @@
+.css-field, #register-link, .css-error-detail, .css-error, .css-note {
+  overflow: hidden;
+}
+
+.css-label {
+  height: 38px;
+  line-height: 38px;
+  float: left;
+  margin-right: 10px;
+  width: 68px;
+}
+
+.css-input {
+  height: 38px;
+  line-height: 38px;
+  float: left;
+  margin-right: 10px;
+  width: 68px;
+
+  input {
+    &[type=text] {
+      border: 1px solid #dadada;
+      text-indent: 5px;
+      width: 189px;
+      padding: 0;
+      transition: border 0.2s linear 0s,box-shadow 0.2s linear 0s;
+      border-radius: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      margin: 0;
+      height: 34px;
+    }
+
+    &:focus {
+      border-color: #e9322d;
+    }
+  }
+
+  > input[type=password] {
+    border: 1px solid #dadada;
+    text-indent: 5px;
+    width: 189px;
+    padding: 0;
+    transition: border 0.2s linear 0s,box-shadow 0.2s linear 0s;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 0;
+    height: 34px;
+  }
+}
+
+.css-submit-btn {
+  text-align: center;
+  padding: 5px 0 0 0;
+  border-top: 1px solid #dddddd;
+  margin: 10px 0 30px;
+}
+
+.btn-submit {
+  color: #ffffff;
+  background-color: $theme-color;
+  border-color: #e43725;
+  border-radius: 0;
+
+  a {
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-color: $theme-color;
+    border-color: #b62516;
+  }
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.text-input {
+  top: 0;
+  position: relative;
+  height: 55px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 17px 10px;
+  width: 140px;
+  color: #ffffff;
+  -webkit-transform: translateZ(0);
+  float: left;
+}
