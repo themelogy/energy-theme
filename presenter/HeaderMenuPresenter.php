@@ -98,8 +98,8 @@ class HeaderMenuPresenter extends Presenter
      */
     public function getMenuWithDropDownWrapper($item)
     {
-        return '<li class="dropdown">
-		          <a class="'.$this->getActiveState($item, ' current').$this->getActiveStateOnChild($item, ' current').'" href="'.$item->getUrl().'">
+        return '<li class="dropdown '.$this->getActiveState($item, ' active').$this->getActiveStateOnChild($item, ' active').'">
+		          <a href="'.$item->getUrl().'">
 				    '.$item->title.'
 				    <b class="caret"></b>
 			      </a>

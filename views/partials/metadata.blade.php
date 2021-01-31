@@ -1,7 +1,7 @@
 {!! seo_helper()->render() !!}
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="{{ Theme::url('img/favicon.png') }}"/>
+<link rel="shortcut icon" href="{{ Theme::url('img/logo/favicon.png') }}"/>
 
 <!-- Webfont Roboto/Condensed -->
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">

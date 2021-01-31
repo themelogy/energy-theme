@@ -4,7 +4,7 @@
 <div class="contact-page-area">
     <div class="row">
         <div class="col-md-8 less-pad-right">
-            <div class="contact-address box-wrapper mt-15 sm-mrgright-15 xs-mrgright-15">
+            <div class="contact-address box-wrapper mt-15 sm-mrgright-15 xs-mrgright-15 equal-column">
                 @includeIf('contact::map')
                 <div class="location">
                     <h3>@setting('theme::company-name')</h3>
@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="contact-page-sidebar box-wrapper mt-15">
+            <div class="contact-page-sidebar box-wrapper mt-15 equal-column">
                 @includeIf('contact::form')
             </div>
         </div>

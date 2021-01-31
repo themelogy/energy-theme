@@ -56,19 +56,6 @@ jQuery(function ($) {
             animationOutSpeed: 200,
         });
     }());
-    // (function () {
-    //     jQuery(document).ready(function () {
-    //         jQuery('a[data-gal]').each(function () {
-    //             jQuery(this).attr('rel', jQuery(this).data('gal'));
-    //         });
-    //         jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({
-    //             animationSpeed: 'slow',
-    //             theme: 'light_square',
-    //             slideshow: 3000,
-    //             social_tools: false
-    //         });
-    //     });
-    // }());
     (function () {
         var timer;
         $('li.dropdown').on('mouseenter', function (event) {

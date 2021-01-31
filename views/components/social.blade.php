@@ -7,8 +7,7 @@
                 </li>
             @elseif(setting('theme::'.$sk))
                 <li>
-                    <a target="_blank" href="{{ setting('theme::'.$sk) }}"><i
-                                class="fa {{ $sv }} {{ $iconClass ?? '' }}"></i></a>
+                    <a target="_blank" href="{{ setting('theme::'.$sk) }}"><i  class="fa {{ $sv }} {{ $iconClass ?? '' }}"></i></a>
                 </li>
             @endif
         @endforeach

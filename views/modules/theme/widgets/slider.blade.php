@@ -9,7 +9,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         @foreach($slides as $slide)
-        <div class="item active">
+        <div class="item {{ $loop->first ? 'active' : '' }}">
             <img data-src="{{ $slide->present()->firstImage(665,470,'fit',80) }}" alt="{{ $slide->sub_title }}" class="lazy">
 
             <div class="carousel-caption">

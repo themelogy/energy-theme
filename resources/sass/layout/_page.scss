@@ -4,6 +4,7 @@
 
   h2 {
     margin-top: 0;
+    font-size: 20px !important;
   }
 }
 
@@ -98,7 +99,7 @@
     line-height: 1;
 
     a {
-      color: $theme-color;
+      color: #666666;
     }
 
     .collapsed {

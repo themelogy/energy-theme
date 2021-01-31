@@ -1,9 +1,11 @@
 <div class="row">
     <div class="col-md-5">
         <div id="imageGallery">
-            @foreach($page->present()->images(600,400,'fit',80) as $image)
-                <a data-thumb="{{ $image }}" data-src="{{ $image }}" href="{{ $image }}">
-                    <img src="{{ $image }}" alt="{{ $page->title }}" />
+            @foreach($page->files("pageImage")->get() as $image)
+                <a data-thumb="{{ \Imagy::getImage($image->filename, "pageImage", ['width' => 45, 'height' => 30, 'mode' => 'fit', 'quality' => 80]) }}"
+                   data-src="{{ \Imagy::getImage($image->filename, "pageImage", ['width' => 1100, 'height' => 800, 'mode' => 'fit', 'quality' => 80]) }}"
+                   href="{{ \Imagy::getImage($image->filename, "pageImage", ['width' => 1100, 'height' => 800, 'mode' => 'fit', 'quality' => 80]) }}">
+                    <img src="{{ \Imagy::getImage($image->filename, "pageImage", ['width' => 600, 'height' => 400, 'mode' => 'fit', 'quality' => 80]) }}" alt="{{ $page->title }}" />
                 </a>
             @endforeach
         </div>
