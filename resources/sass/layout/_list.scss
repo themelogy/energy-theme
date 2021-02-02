@@ -35,3 +35,10 @@ ul#css_ul {
   line-height: 17px;
   font-size: 11px;
 }
+
+.list-style {
+  padding-left: 10px;
+  li {
+    list-style-type: none !important;
+  }
+}

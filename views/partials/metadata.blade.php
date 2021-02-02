@@ -18,7 +18,7 @@
 {!! Theme::style('css/offcanvas.css') !!}
 
 <!-- Font Awesome CSS -->
-{!! Theme::style('css/font-awesome.css') !!}
+<link rel="stylesheet" href="{{ mix('/themes/energy/css/font-awesome.css') }}">
 
 <!-- Main CSS -->
 <link rel="stylesheet" href="{{ mix('/themes/energy/css/style.css') }}">

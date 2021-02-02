@@ -388,3 +388,19 @@
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+
+.press-years {
+  .press-year {
+    margin: 0 5px;
+    font-size: 2rem;
+    .thumbnail {
+      padding: 10px;
+      background-color: #fff;
+      color: $theme-color;
+      &:hover {
+        background-color: $theme-color;
+        color: $white;
+      }
+    }
+  }
+}

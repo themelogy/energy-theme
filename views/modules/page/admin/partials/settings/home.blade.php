@@ -4,6 +4,7 @@
         <div class="col-md-12 form-inline">
             <div class="form-group" style="margin-right: 10px;">
                 <label>
+                    {!! Form::hidden("settings[show_service_box]", 0) !!}
                     {!! Form::checkbox("settings[show_service_box]", 1, old('settings.show_service_box', isset($page->settings->show_service_box) ? $page->settings->show_service_box : 0), ['class'=>'flat-blue']) !!}
                     &nbsp; Ansayfa Kutu'da Göster
                 </label>
