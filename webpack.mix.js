@@ -25,6 +25,7 @@ mix.copyDirectory('node_modules/font-awesome/fonts', source + '/resources/fonts'
 mix.copyDirectory('node_modules/lightslider/dist', source + '/resources/plugins/lightslider');
 mix.copyDirectory('node_modules/lightgallery/dist', source + '/resources/plugins/lightgallery');
 mix.copyDirectory('node_modules/lightbox2/dist', source + '/resources/plugins/lightbox2');
+mix.copyDirectory('node_modules/plyr/dist', source + '/resources/plugins/plyr');
 
 // Sass Generate
 if(!isProduction) {

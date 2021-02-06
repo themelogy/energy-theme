@@ -1,0 +1,1 @@
+<li><a href="#duyurular" data-toggle="tab">{{ $category->name }}</a></li>

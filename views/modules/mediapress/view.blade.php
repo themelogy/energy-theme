@@ -19,7 +19,9 @@
                                     <span class="badge"><i class="fa fa-calendar"></i> {{ $media->created_at->formatLocalized('%d %B %Y') }}</span>
                                 </h1>
                                 <div class="post-article">
-                                    <img class="img-thumbnail mb-20 mrg-20 floatleft lazy" data-src="{{ $media->present()->firstImage(800,null,'resize',80) }}" alt="{{ $media->title }}">
+                                    @if($image = $media->present()->firstImage(800,null,'resize',80))
+                                        <img class="img-thumbnail mb-20 mrg-20 floatleft lazy" data-src="{{ $image }}" alt="{{ $media->title }}">
+                                    @endif
                                     {!! $media->description !!}
 
                                     @if($media->media_desc)

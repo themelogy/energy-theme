@@ -1,0 +1,1 @@
+<li class="active"><a href="#video" data-toggle="tab">@lang('themes::video.title.tab')</a></li>

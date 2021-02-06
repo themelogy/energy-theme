@@ -8,5 +8,8 @@ return [
                 'title' => 'Yeniköy Kemerköy Kurumsal'
             ]
         ]
+    ],
+    'buttons' => [
+    	'click for more information' => 'KVKK Bilgi Formu'
     ]
 ];

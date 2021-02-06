@@ -4,6 +4,14 @@
     <div class="row">
         <div class="col-md-3">
             <div class="custom-menu-widget">
+                <h2 class="widget-title ">{{ $menuService->title('kurumsal') }}</h2>
+                <div class="custom-widget">
+                    {!! Menu::render("kurumsal", \Themes\Energy\Presenter\FooterMenuLinksPresenter::class) !!}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="custom-menu-widget">
                 <h2 class="widget-title ">{{ $menuService->title('eys') }}</h2>
                 <div class="custom-widget">
                     {!! Menu::render("eys", \Themes\Energy\Presenter\FooterMenuLinksPresenter::class) !!}
@@ -15,14 +23,6 @@
                 <h2 class="widget-title ">{{ $menuService->title('tanitim') }}</h2>
                 <div class="custom-widget">
                     {!! Menu::render("tanitim", \Themes\Energy\Presenter\FooterMenuLinksPresenter::class) !!}
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="custom-menu-widget">
-                <h2 class="widget-title ">{{ $menuService->title('basin-odasi') }}</h2>
-                <div class="custom-widget">
-                    {!! Menu::render("basin-odasi", \Themes\Energy\Presenter\FooterMenuLinksPresenter::class) !!}
                 </div>
             </div>
         </div>

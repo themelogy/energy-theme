@@ -8,5 +8,8 @@ return [
                 'title' => 'WHY IC ENERGY-LIMAK ENERGY'
             ]
         ]
+    ],
+    'buttons' => [
+        'click for more information' => 'More Information'
     ]
 ];

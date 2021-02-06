@@ -18,6 +18,15 @@ jQuery(function ($) {
             navText: ["", ""],
             responsive: {0: {items: 1, nav: false}, 600: {items: 3, nav: false}, 1000: {items: 3}}
         });
+        $('.video-latest').owlCarousel({
+            loop: false,
+            margin: 20,
+            nav: true,
+            lazyLoad: true,
+            dots: false,
+            navText: ["", ""],
+            responsive: {0: {items: 1, nav: false}, 600: {items: 3, nav: false}, 1000: {items: 3}}
+        });
         $('.client-testimonial').owlCarousel({
             loop: true,
             margin: 0,

@@ -1,0 +1,17 @@
+.video-show {
+  border: 1px solid $border-color;
+  padding: 5px;
+  .controls {
+    text-align: center;
+    padding: 20px 0;
+    button {
+      width: 100px;
+      margin: 0 5px;
+      i {
+        font-size: 2rem;
+        padding: 10px;
+      }
+      border-radius: 150px;
+    }
+  }
+}

@@ -2,7 +2,7 @@
 
 return [
   'titles' => [
-      'gallery' => 'Galeri'
+      'gallery' => 'Fotoğraflar'
   ],
   'meta' => [
       'title' => 'Fotoğraflar',
