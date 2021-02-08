@@ -1,4 +1,4 @@
-<div class="video-latest owl-carousel">
+<div class="latest-news owl-carousel">
     @foreach($medias as $media)
         <div class="item">
             <a href="{{ $media->url }}">

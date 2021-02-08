@@ -22,5 +22,8 @@ return [
         'message' => 'Message',
         'date'    => 'Date',
         'ip'      => 'IP'
+    ],
+    'buttons' => [
+        'direction us' => 'Direction Us'
     ]
 ];

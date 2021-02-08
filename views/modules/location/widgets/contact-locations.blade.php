@@ -28,7 +28,7 @@
             </div>
             <div class="d-flex">
                 <div class="info">
-                    <a href="https://www.google.com/maps/dir/Current+Location/{{ $location->lat.','.$location->long }}" class="btn btn-default mt-15 pull-right btn-xs" target="_blank"><i class="fa fa-map-marker"></i> YOL TARİFİ AL</a>
+                    <a href="https://www.google.com/maps/dir/Current+Location/{{ $location->lat.','.$location->long }}" class="btn btn-default mt-15 pull-right btn-xs" target="_blank"><i class="fa fa-map-marker"></i> @lang('themes::contact.buttons.direction us')</a>
                 </div>
             </div>
         </div>

@@ -21,8 +21,9 @@
                     </div>
                 @endforeach
                 </div>
+                {!! $medias->links('partials.pagination') !!}
             </div>
         </div>
-        @include('mediapress::partials.sidebar')
+        @include('news::partials.sidebar')
     </div>
 @endsection

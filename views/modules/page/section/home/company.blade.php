@@ -5,8 +5,8 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs">
                     @videoLatest(6, 'home.tab-head')
-                    @galleryByCategory("basinda-biz", 6, "home.tab-head")
-                    @mediapressLatest(6,"home.tab-head")
+                    @galleryByCategory("basin-odasi", 6, "home.tab-head")
+{{--                     @mediapressLatest(6,"home.tab-head") --}}
                     @pageFindByOptions('settings.show_service_tab', 'home.tab-head')
                 </ul>
                 <!-- Tab panes -->
@@ -16,11 +16,11 @@
                             @videoLatest(6, 'home.tab-content')
                         </div>
                         <div class="tab-pane clearfix" id="galeri">
-                            @galleryByCategory("basinda-biz", 6, "home.tab-content")
+                            @galleryLatest(6, "home.tab-content")
                         </div>
-                        <div class="tab-pane clearfix" id="basin-odasi">
+{{--                         <div class="tab-pane clearfix" id="basin-odasi">
                             @mediapressLatest(6,"home.tab-content")
-                        </div>
+                        </div> --}}
                         @pageFindByOptions('settings.show_service_tab', 'home.tab-content')
                     </div>
                     <!-- .tab-content -->

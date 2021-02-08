@@ -1,8 +1,8 @@
 @extends('layouts.master')
 
 @section('content')
-    @component('partials.components.title', ['breadcrumbs'=>'gallery.index'])
-        <h1 class="title">{{ trans('themes::gallery.meta.title') }}</h1>
+    @component('partials.components.title', ['breadcrumbs'=>'gallery.category'])
+        <h1 class="title">{{ $category->title }}</h1>
     @endcomponent
     <div class="row">
         <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">

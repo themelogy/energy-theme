@@ -8,7 +8,7 @@
                 @includeIf('contact::map')
                 <div class="location">
                     <h3>@setting('theme::company-name')</h3>
-                    <a href="https://www.google.com/maps/dir/Current+Location/{{ setting('contact::contact-map-lat').','.setting('contact::contact-map-lng') }}" class="btn btn-default m-top-10 pull-right" target="_blank"><i class="fa fa-map-marker"></i> YOL TARİFİ AL</a>
+                    <a href="https://www.google.com/maps/dir/Current+Location/{{ setting('contact::contact-map-lat').','.setting('contact::contact-map-lng') }}" class="btn btn-default m-top-10 pull-right" target="_blank"><i class="fa fa-map-marker"></i> @lang('themes::contact.buttons.direction us')</a>
                     <div class="d-flex">
                         <div class="icon m-r-10">
                             <i class="fa fa-map-marker"></i>

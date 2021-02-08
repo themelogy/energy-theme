@@ -22,5 +22,8 @@ return [
         'message' => 'Mesaj',
         'date'    => 'Tarih',
         'ip'      => 'IP'
+    ],
+    'buttons' => [
+        'direction us' => 'Yol tarifi al'
     ]
 ];

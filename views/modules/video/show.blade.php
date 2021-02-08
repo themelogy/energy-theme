@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-        @include('mediapress::partials.sidebar')
+        @include('news::partials.sidebar')
     </div>
 @endsection
 
