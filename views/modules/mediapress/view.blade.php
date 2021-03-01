@@ -15,7 +15,9 @@
                             <div class="post">
                                 <h1 class="article-title">
                                     {{ $media->title }}
-                                    <span class="badge"><i class="fa fa-paperclip"></i> {{ $media->brand }}</span>
+                                    @if(isset($media->brand))
+                                        <a href="{{ $media->brand->url }}"><span class="badge"><i class="fa fa-paperclip"></i> {{ @$media->brand->title }}</span></a>
+                                    @endif
                                     <span class="badge"><i class="fa fa-calendar"></i> {{ $media->created_at->formatLocalized('%d %B %Y') }}</span>
                                 </h1>
                                 <div class="post-article">

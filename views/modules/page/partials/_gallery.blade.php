@@ -35,6 +35,7 @@
                 thumbItem:9,
                 auto: true,
                 slideMargin:0,
+                pause: 5000,
                 enableDrag: false,
                 currentPagerPosition:'left',
                 onSliderLoad: function(el) {

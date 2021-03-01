@@ -3,7 +3,7 @@
 return [
     'title' => 'Haberler',
     'titles' => [
-        'categories' => 'Kategori',
+        'categories' => 'Bizden Haberler',
         'latest posts' => 'Son Haberler'
     ],
     'widgets' => [

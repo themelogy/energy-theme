@@ -311,10 +311,6 @@
 
 .latest-news {
   img {
-    filter: grayscale(1);
     border: 1px solid $border-color;
-    &:hover {
-      filter: grayscale(0);
-    }
   }
 }

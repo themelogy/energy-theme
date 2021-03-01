@@ -3,7 +3,7 @@
 return [
     'title' => 'News',
     'titles' => [
-        'categories' => 'Category',
+        'categories' => 'Our News',
         'latest posts' => 'Latest Posts'
     ],
     'widgets' => [

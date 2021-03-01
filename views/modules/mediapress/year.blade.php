@@ -10,7 +10,7 @@
                 <ul class="list-style">
                     @foreach($medias as $media)
                         <li>
-                            <a href="{{ $media->url }}"><i class="fa fa-dot-circle-o"></i> {{ $media->title }} - {{ $media->brand }} {{ $media->release_at->formatLocalized('%d %B %Y') }} </a>
+                            <a href="{{ $media->url }}"><i class="fa fa-dot-circle-o"></i> {{ $media->title }} - {{ @$media->brand->title }} {{ $media->release_at->formatLocalized('%d %B %Y') }} </a>
                         </li>
                     @endforeach
                 </ul>

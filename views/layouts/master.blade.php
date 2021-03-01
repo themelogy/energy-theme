@@ -17,6 +17,6 @@
     </div>
 </div>
 @include('partials.scripts')
-@include('core::cookie-law')
+{{-- @include('core::cookie-law') --}}
 </body>
 </html>

@@ -43,6 +43,7 @@
                 thumbItem:9,
                 auto: true,
                 slideMargin:0,
+                pause: {!! isset($album->settings->slider_delay) ? $album->settings->slider_delay*1000 : 5000 !!},
                 enableDrag: false,
                 currentPagerPosition:'left',
                 onSliderLoad: function(el) {

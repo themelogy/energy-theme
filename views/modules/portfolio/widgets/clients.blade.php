@@ -7,7 +7,7 @@
             <div class="logo-slider owl-carousel">
                 @foreach($brands as $brand)
                 <div class="item" style="padding: 0 10px">
-                    <img class="owl-lazy" data-src="{{ $brand->present()->firstImage(null,60,'resize',100) }}" alt="Demo Image"/>
+                    <a target="_blank" rel="nofollow" href="{{ $brand->website }}"><img class="owl-lazy" data-src="{{ $brand->present()->firstImage(null,60,'resize',100) }}" alt="{{ $brand->title }}"/></a>
                 </div>
                 @endforeach
             </div>
