@@ -5,7 +5,7 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs">
                     @videoLatest(6, 'home.tab-head')
-                    @galleryByCategory("basinda-biz", 6, "home.tab-head")
+                    @galleryLatest(6, "home.tab-head")
 {{--                     @mediapressLatest(6,"home.tab-head") --}}
                     @pageFindByOptions('settings.show_service_tab', 'home.tab-head')
                 </ul>

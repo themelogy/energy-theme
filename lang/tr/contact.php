@@ -25,5 +25,8 @@ return [
     ],
     'buttons' => [
         'direction us' => 'Yol tarifi al'
+    ],
+    'subjects' => [
+        'complaint' => 'Şikayet / İhbar / Memnuniyet'
     ]
 ];

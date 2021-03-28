@@ -41,6 +41,17 @@
 
     <div class="row">
         <div class="col-md-12">
+            <div class="form-group" :class="{'has-error':errors.subject}">
+                <select name="subject" class="form-control" v-model="input.subject" :class="{ 'is-invalid' : hasError('subject') }">
+                    <option v-for="sbj in subjects" :value="sbj.id">@{{ sbj.title }}</option>
+                </select>
+                <span v-for="error in errors.subject" class="help-block">@{{ error }}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
             <div class="form-group" :class="{'has-error':errors.enquiry}">
                 <textarea name="enquiry" class="form-control form-control-sm" placeholder="{{ trans('contact::contacts.form.enquiry') }}" rows="3" v-model="input.enquiry" :class="{ 'is-invalid' : hasError('enquiry') }"></textarea>
                 <span v-for="error in errors.enquiry" class="help-block">@{{ error }}</span>
@@ -78,17 +89,23 @@
             new Vue({
                 el: '#contact_form',
                 data: {
+                    subjects: {!! json_encode($subjects) !!},
+                    subjectSelected: 1,
                     input: {
                         first_name: '',
                         last_name: '',
                         phone: '',
                         email: '',
+                        subject: "",
                         enquiry: '',
                         captcha_contact: ''
                     },
                     errors: {},
                     success: false,
                     successMessage: ''
+                },
+                created() {
+                    this.input.subject = this.subjectSelected;
                 },
                 methods: {
                     submitForm: function (e) {
