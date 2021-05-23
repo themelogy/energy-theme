@@ -2,6 +2,7 @@
 
 return [
   'titles' => [
-      'mediapress' => 'Basında Biz'
+      'mediapress' => 'Basında Biz',
+      'brands'     => 'Medya Kanalları'
   ]
 ];

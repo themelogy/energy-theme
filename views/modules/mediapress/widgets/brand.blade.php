@@ -1,5 +1,5 @@
 <div class="widget_pages">
-{{--    <h2>@lang('themes::news.titles.categories')</h2>--}}
+    <h2>@lang('themes::mediapress.titles.brands')</h2>
     <ul>
         @foreach($brands as $brand)
             <li>

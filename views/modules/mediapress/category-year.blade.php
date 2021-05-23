@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    @component('partials.components.title', ['breadcrumbs'=>'mediapress.year'])
+    @component('partials.components.title', ['breadcrumbs'=>'mediapress.category.year'])
         <h1 class="title">{{ $title }}</h1>
     @endcomponent
     <div class="row">
@@ -11,7 +11,7 @@
                 <div class="d-flex press-years">
                     @foreach($types as $slug => $type)
                         <div class="press-year">
-                            <a href="{{ localize_trans_url(locale(), "mediapress::routes.media.type", ['year'=>$year, 'mediaType'=>$slug]) }}">
+                            <a href="{{ localize_trans_url(locale(), "mediapress::routes.category.type", ['mediapressCategory'=>$category->slug, 'year'=>$year, 'type'=>$slug]) }}">
                                 <div class="thumbnail">
                                     {{ $type }}
                                 </div>

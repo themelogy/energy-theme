@@ -7,19 +7,6 @@
     <div class="row">
         <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
             <div class="page-content box-wrapper mt-15">
-
-                <div class="d-flex press-years">
-                    @foreach($types as $slug => $type)
-                        <div class="press-year">
-                            <a href="{{ localize_trans_url(locale(), "mediapress::routes.media.type", ['year'=>$year, 'mediaType'=>$slug]) }}">
-                                <div class="thumbnail">
-                                    {{ $type }}
-                                </div>
-                            </a>
-                        </div>
-                    @endforeach
-                </div>
-
                 <ul class="list-style">
                     @foreach($medias as $media)
                         <li>
