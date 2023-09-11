@@ -51,11 +51,11 @@
 
             <!-- HEAD SEARCH -->
             <div class="head-search">
-                <form method="post" action="#" class="form-search">
+                {!! Form::open(['route' => 'search.index', 'method'=>'post']) !!}
                     <div class="search">
-                        <i class="fa fa-search"></i><input type="text" size="20" class="form-control " maxlength="20" name="searchword">
+                        <i class="fa fa-search"></i><input type="text" size="20" class="form-control " maxlength="20" name="s">
                     </div>
-                </form>
+                {!! Form::close() !!}
             </div>
             <!-- //HEAD SEARCH -->
         </div>
