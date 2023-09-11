@@ -15,9 +15,6 @@
                             <div class="post">
                                 <h1 class="article-title">
                                     {{ $media->title }}
-
-                                    <span class="badge"><i class="fa fa-calendar"></i> {{ $media->created_at->formatLocalized('%d %B %Y') }}</span>
-                                    <span class="badge"><i class="fa fa-cube"></i> {{ $media->present()->media_type }}</span>
                                 </h1>
                                 <div class="post-article">
 

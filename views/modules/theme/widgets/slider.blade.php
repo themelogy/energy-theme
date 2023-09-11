@@ -10,7 +10,7 @@
     <div class="carousel-inner" role="listbox">
         @foreach($slides as $slide)
         <div class="item {{ $loop->first ? 'active' : '' }}">
-            <img data-src="{{ $slide->present()->firstImage(665,470,'fit',80) }}" alt="{{ $slide->sub_title }}" class="lazy">
+            <img data-src="{{ $slide->present()->firstImage(665,470,'resize',80) }}" alt="{{ $slide->sub_title }}" class="lazy">
 
             <div class="carousel-caption">
                 <h2 class="slider-title" style="color: {{ $slide->settings->title_color }};">{{ $slide->sub_title }}</h2>
@@ -37,3 +37,13 @@
     </a>
 
 </div>
+
+@push('js-inline')
+<script>
+$(document).ready(function () {
+  $('.carousel').carousel({
+    interval: 15000
+  })
+});
+</script>
+@endpush

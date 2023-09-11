@@ -18,5 +18,6 @@
 </div>
 @include('partials.scripts')
 {{-- @include('core::cookie-law') --}}
+@yield('popup')
 </body>
 </html>
